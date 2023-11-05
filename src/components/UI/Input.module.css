@@ -1,0 +1,16 @@
+.input label {
+  font-size: 1.1rem;
+}
+
+.input input {
+  margin: 0 0.75rem;
+  padding: 0.25rem 0.1rem;
+  line-height: 1rem;
+  width: 2.5rem;
+  font-size: calc(var(--font-size-medium) + 1.16px);
+  text-align: center;
+
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+}

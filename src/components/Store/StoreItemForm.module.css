@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  justify-content: flex-end;
+  width: 15rem;
+  padding-right: 0.75rem;
+}
+
+.form button {
+  padding: 0.49rem 0.5rem;
+  line-height: 1rem;
+
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+
+  background-color: var(--pure-white);
+
+  transition: outline 500ms ease-in-out;
+
+  cursor: pointer;
+}
+
+.form button:focus,
+.form button:hover {
+  outline: 1px solid black;
+}

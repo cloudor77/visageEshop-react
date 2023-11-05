@@ -1,0 +1,131 @@
+.navbar {
+  height: 100vh;
+  width: 20rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translateX(0%);
+  float: left;
+}
+
+.navbar::after {
+  position: absolute;
+  content: "";
+  border: 0.05rem solid var(--pure-white);
+  bottom: 2rem;
+  top: 2rem;
+  right: 0;
+  transition: position 1500ms ease-in;
+}
+
+.navbar h4 {
+  text-transform: uppercase;
+  color: var(--main-font-color);
+  font-size: var(--font-size-big);
+}
+
+.stickyNav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.navbarUl {
+  list-style: none;
+  margin-bottom: 20rem;
+  height: 15rem;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.navbarUl li {
+  position: relative;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.115rem;
+}
+
+.navbarUl li::before,
+.navbarUl li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0px;
+  background: black;
+  transition: width 300ms ease-in-out;
+}
+
+.navbarUl li::before {
+  left: 0;
+}
+
+.navbarUl li::after {
+  right: 0;
+}
+
+.navbarUl li:hover::before,
+.navbarUl li:hover::after {
+  width: 50%;
+}
+
+@media screen and (max-width: 1600px) {
+  .navbar {
+    width: 100%;
+    height: 10rem;
+
+    flex-direction: row;
+    float: none;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transform: translateY(0%);
+
+    border-bottom: var(--pure-white);
+    background-color: var(--pure-white-transparent);
+
+    padding: 0rem 1rem;
+  }
+
+  .navbar::after {
+    position: absolute;
+    content: none;
+    transition: position 1500ms ease-in;
+  }
+
+  .transforming {
+    transform: translateY(-90%);
+  }
+
+  .navbar ul {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0rem;
+    margin: 0;
+    width: 22.5rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .navbar {
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .navbar {
+    height: 5rem;
+  }
+}

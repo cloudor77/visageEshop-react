@@ -1,0 +1,75 @@
+.storeSegment {
+  width: 80rem;
+}
+
+.listUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+.listUl li {
+  list-style: none;
+  cursor: pointer;
+
+  font-size: var(--font-size-medium);
+  text-transform: uppercase;
+}
+
+.listUl a {
+  text-decoration: none;
+  color: black;
+
+  position: relative;
+}
+
+.listUl a::before,
+.listUl a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 300ms linear;
+}
+
+.listUl a::before {
+  left: 0;
+  bottom: 0;
+}
+
+.listUl a:hover::before {
+  width: 100%;
+}
+
+.activeAnchor {
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+.notActiveAnchor {
+  border: none;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1600px) {
+  .storeSegment {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .listUl {
+    width: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .listUl li {
+    margin: 1rem auto;
+    justify-self: center;
+  }
+}

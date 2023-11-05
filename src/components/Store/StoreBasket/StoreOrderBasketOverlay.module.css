@@ -1,0 +1,36 @@
+.itemList {
+  list-style: none;
+}
+
+.totalAmount {
+  text-align: end;
+  padding: 0rem 1rem 1.25rem 0rem;
+  font-size: var(--font-size-big);
+}
+
+.noTotalAmount {
+  text-align: center;
+  font-size: var(--font-size-big);
+}
+
+.orderBtn {
+  text-align: end;
+  margin: 5rem 1.75rem 1.75rem 0;
+}
+
+.orderBtn button {
+  padding: 1rem 1.75rem;
+
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+
+  text-transform: uppercase;
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+}
+
+.orderBtn button:focus,
+.orderBtn button:hover {
+  outline: 1px solid var(--border-color);
+}

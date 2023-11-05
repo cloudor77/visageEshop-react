@@ -1,0 +1,47 @@
+.formSpace {
+  height: 20rem;
+  overflow: scroll;
+  display: flex;
+  padding: 0rem 0rem 1rem 2rem;
+}
+
+.formStyle {
+  display: flex;
+
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 2rem auto;
+}
+
+.formStyle label,
+.formStyle input {
+  color: black;
+}
+
+.formStyle label {
+  padding-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+}
+
+.formStyle input {
+  outline: none;
+  border: none;
+  width: 20rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  font-size: var(--font-size-medium);
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.invalid label {
+  color: red;
+}
+
+.invalid input {
+  border: 1px solid red;
+}

@@ -1,0 +1,52 @@
+:root {
+  --main-font-color: rgb(14, 117, 234);
+  --pure-white: rgb(255, 255, 255);
+  --pure-white-transparent: rgba(255, 255, 255, 1);
+
+  --font-size-gigantic: 2.25rem;
+  --font-size-big: 1.75rem;
+  --font-size-medium: 1.25rem;
+  --font-size-small: 0.9rem;
+
+  --border-color: rgb(25, 25, 25, 0.7);
+
+  --background-style: linear-gradient(
+    -180deg,
+    rgb(211, 211, 211) 0%,
+    rgb(0, 174, 255) 63%,
+    rgb(227, 226, 226) 100%
+  );
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", sans-serif;
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  background: rgb(255, 255, 255);
+  background: var(--background-style);
+
+  font-size: 1rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

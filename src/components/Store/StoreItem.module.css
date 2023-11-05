@@ -1,0 +1,120 @@
+.storeItem {
+  width: 33rem;
+  float: left;
+  margin: 2.5rem 3rem 0rem 3rem;
+}
+
+.storeItem header {
+  text-align: center;
+  padding: 1.5rem 0rem 0rem 1rem;
+  margin: 0;
+}
+
+.storeItem header p {
+  font-size: var(--font-size-big);
+  font-weight: 600;
+  padding-left: 16rem;
+}
+
+.storeItem section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: var(--font-size-small);
+  letter-spacing: 0.25rem;
+}
+
+.storeItem section span {
+  padding: 0 0.5rem 0.5rem 1.35rem;
+}
+
+.storeItem section img {
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin: 0 0.25rem 0.5rem 0.25rem;
+
+  transition: transform 200ms ease-in-out;
+}
+
+.storeItem section img:hover,
+.storeItem section img:focus {
+  transform: scale(2);
+}
+
+.storeItem footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.storeItem footer span {
+  padding-left: 0.75rem;
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1600px) {
+  .storeItem {
+    float: none;
+    height: 33rem;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .storeItem section {
+    justify-content: space-around;
+  }
+
+  .storeItem header p {
+    padding: 0;
+  }
+
+  .storeItem section span {
+    width: 30%;
+  }
+  .storeItem section img {
+    width: 20rem;
+    margin: 0 1rem 0.5rem 0.25rem;
+    z-index: 1;
+  }
+
+  .storeItem section img:hover,
+  .storeItem section img:focus {
+    transform: scale(1.5);
+  }
+
+  .storeItem footer {
+    justify-content: space-evenly;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .storeItem section {
+    flex-direction: column;
+  }
+
+  .storeItem header p {
+    margin: 0;
+  }
+
+  .storeItem section span {
+    margin: 1rem 1.25rem;
+    width: 22rem;
+    font-size: var(--font-size-small);
+  }
+
+  .storeItem section img {
+    width: 20rem;
+    border-radius: 0.5rem;
+    margin: 0 0.25rem 0.5rem 0.25rem;
+
+    transition: transform 200ms ease-in-out;
+  }
+  .storeItem section img:hover,
+  .storeItem section img:focus {
+    transform: scale(1.5);
+  }
+}
